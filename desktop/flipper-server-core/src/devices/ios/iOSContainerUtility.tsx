@@ -219,7 +219,7 @@ async function pull(
   return wrapWithErrorMessage(
     reportPlatformFailures(
       safeExec(
-        `${idbPath} --log ${idbLogLevel} file pull --udid ${udid} --bundle-id ${bundleId} '${src}' '${dst}'`,
+        `${idbPath} --log ${idbLogLevel} file pull --udid ${udid} --bundle-id ${bundleId} '${src}' '${dst}/app.csr'`,
       )
         .then(() => {
           return;
